@@ -25,7 +25,15 @@ while(entrada !== "4"){
         case "2":
 
         console.log("Usted ha elegido la opción de eliminar el último libro.")
-        console.log(`usted ha eliminado el libro ` + librero.pop() + ".");
+
+        if(librero.length > 0){
+
+            console.log(`usted ha eliminado el libro ` + librero.pop() + ".");
+        }else{
+
+            console.log("No puede eliminar más libros, porque ya no tiene.");
+        }
+        
         break;
 
         case "3":
